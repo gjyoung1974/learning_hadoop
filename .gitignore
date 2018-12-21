@@ -1,6 +1,7 @@
 /.idea
 .idea
 *.idea
+learning_hadoop.iml
 
 # Compiled class file
 *.class
