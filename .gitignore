@@ -1,7 +1,9 @@
 /.idea
 .idea
-*.idea
 learning_hadoop.iml
+
+/.target
+.target
 
 # Compiled class file
 *.class

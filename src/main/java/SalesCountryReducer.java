@@ -11,10 +11,11 @@ public class SalesCountryReducer extends MapReduceBase implements Reducer<Text, 
 		Text key = t_key;
 		int frequencyForCountry = 0;
 		while (values.hasNext()) {
+
 			// replace type of value with the actual type of our value
 			IntWritable value = (IntWritable) values.next();
 			frequencyForCountry += value.get();
-			
+
 		}
 		output.collect(key, new IntWritable(frequencyForCountry));
 	}

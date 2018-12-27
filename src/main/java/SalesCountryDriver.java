@@ -15,9 +15,9 @@ public class SalesCountryDriver {
 		job_conf.setOutputKeyClass(Text.class);
 		job_conf.setOutputValueClass(IntWritable.class);
 
-		// Specify names of Mapper and Reducer Class
-		//job_conf.setMapperClass(SalesCountry.SalesMapper.class);
-		//job_conf.setReducerClass(SalesCountry.SalesCountryReducer.class);
+		//Specify names of Mapper and Reducer Class
+		job_conf.setMapperClass(SalesMapper.class);
+		job_conf.setReducerClass(SalesCountryReducer.class);
 
 		// Specify formats of the data type of Input and output
 		job_conf.setInputFormat(TextInputFormat.class);
